@@ -1,0 +1,208 @@
+/* RESET ALL TAG */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE */
+.container {
+    width: 650px;
+    margin: auto;
+    background-color: white;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.container .header .profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(img/profile.png);
+    background-size: cover;
+    background-position: 0 -5px ;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container .main .judul {
+    font: 45px/50px 'Segoe UI', Tahoma;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.container .main .deskripsi {
+    font: 25px/35px 'Segoe UI', Tahoma;
+    /* font-weight: bold; */
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.container .main .deskripsi a {
+    color: #069;
+    padding: 2px;
+}
+
+.container .main .deskripsi a:hover {
+    color: white;
+    background-color: #069;
+}
+
+.container .main .quotes {
+    display: block;
+    width: 550px;
+    font: 20px/22px 'Segoe UI', Tahoma;
+    font-weight: 450;
+    color: #6b6a6a;
+    margin-bottom: 30px;
+    border-left: 6px solid #c8c6c6;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: -27px;
+    position: relative;
+}
+
+.container .main .namequotes {
+    font: 15px/10px 'Segoe UI', Tahoma;
+    color: #222;
+}
+
+/* List */
+
+.list h2{
+    font: 28px/10px 'Segoe UI', Tahoma;
+    font-weight: 750;
+    color: #222;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.list .StyleCode {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    background-color: #00A6ED;
+}
+
+.list .StyleTek {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    background-color: #849324;
+}
+
+.list li .date {
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    font: 15px/10px 'Segoe UI', Tahoma;
+    font-weight: 400;
+    color: #6b6a6a;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+
+.list .ListText a {
+    font: 18px/30px 'Segoe UI', Tahoma;
+    font-weight: 4300;
+    color: #069;
+    margin-left: 20px;
+    /* margin-bottom: 30px; */
+    padding: 2px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
+.list .ListText a:hover {
+    color: white;
+    background-color: #069;
+}
+
+.container .footer {
+    width: 650px;
+    font: 15px/10px 'Segoe UI', Tahoma;
+    padding: 30px 0;
+    margin-top: 20px;
+    border-top: 1px solid #c8c6c6;
+    color: #969696;
+}
+
+.container .footer a {
+    text-decoration: none;
+    color: #069;
+    padding: 2px;
+}
+
+.container .footer a:hover {
+    color: white;
+    background-color: #069;
+}
+
+
+/* RESET FLOATS */
+.cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+
+
+
+
+

@@ -1,0 +1,207 @@
+/* RESET ALL TAG */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLE */
+.container {
+    width: 650px;
+    /* height: 5000px; */
+    margin: auto;
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+
+.container .header .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(img/profile.png);
+    background-size: cover;
+    background-position: 0 -2px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container .header .StyleCode {
+    width: 60px;
+    height: 30px;
+    border-radius: 999px;
+    background-color: #00A6ED;
+    text-align: center;
+    padding: 7px 0px;
+    box-sizing: border-box;
+    font: 18px/15px 'Segoe UI', Tahoma;
+    color: white;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+}
+
+.container .header .date {
+    display: inline-block;
+    position: absolute;
+    left: 70px;
+    top: 90px;
+    font: 18px/10px 'Segoe UI', Tahoma;
+    font-weight: 400;
+    color: #6b6a6a;
+    /* letter-spacing: 0.5px; */
+    /* word-spacing: 3px; */
+
+}
+
+.container .header .judul {
+    font: 45px/50px 'Segoe UI', Tahoma;
+    font-weight: bold;
+    color: #222;
+    margin: 25px 0;
+    /* text-align: center; */
+}
+
+.container .main .cover {
+    width: 100%;
+    height: 250px;
+    background-image: url(img/openwrt.jpg);
+    background-size: cover;
+    background-position: 0 -60px;
+    /* position: absolute; */
+    /* left: 0px;
+    right: 0px; */
+    /* border: 1px solid black; */
+}
+
+.container .main .description {
+    font: 22px/33px 'Segoe UI', Tahoma;
+    color: #222;
+    margin: 30px 0px;
+}
+
+.container .main h2 {
+    font: 30px/35px 'Segoe UI', Tahoma;
+    font-weight: 700;
+    color: #222;
+    margin-top: 50px;
+}
+
+.container .main p {
+    font: 18px/25px 'Segoe UI', Tahoma;
+    color: #222;
+    font-weight: 400;
+    margin: 20px 0px 20px 0px;
+}
+
+.container .main a {
+    /* text-decoration: none; */
+    color: #069;
+    padding: 2px;
+}
+
+.container .main a:hover {
+    color: white;
+    background-color: #069;
+}
+
+.container .main img {
+    width: 650px;
+    /* height: ; */
+    margin: 20px 0px;
+}
+
+.container .back {
+    width: 650px;
+    font: 20px/10px 'Segoe UI', Tahoma;
+    font-weight: 700;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-top: 1px solid #c8c6c6;
+    color: #969696;
+}
+
+.container .back a {
+    text-decoration: none;
+    color: #069;
+    padding: 2px;
+}
+
+.container .back a:hover {
+    color: white;
+    background-color: #069;
+}
+
+.container .footer {
+    width: 650px;
+    font: 15px/10px 'Segoe UI', Tahoma;
+    padding: 30px 0;
+    margin-top: 8px;
+    border-top: 1px solid #c8c6c6;
+    color: #969696;
+}
+
+.container .footer a {
+    text-decoration: none;
+    color: #069;
+    padding: 2px;
+}
+
+.container .footer a:hover {
+    color: white;
+    background-color: #069;
+}
+
+/* RESET FLOATS */
+.cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+
+
+
+
