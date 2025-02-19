@@ -101,6 +101,7 @@ table {
     /* text-align: center; */
 }
 
+<<<<<<< HEAD
 .container .main .cover {
     width: 100%;
     height: 250px;
@@ -110,6 +111,19 @@ table {
     /* position: absolute; */
     /* left: 0px;
     right: 0px; */
+=======
+.container .main .cover img {
+    width: 700px;
+    /* height: 300px; */
+    /* position: relative;
+    z-index: 2; */
+    /* display: inline-block; */
+    /* background-size: cover; */
+    /* background-position: 0 100px; */
+    /* position: absolute; */
+    /* left: 0px; */
+    /* right: 0px; */
+>>>>>>> 1719cde (initial commit)
     /* border: 1px solid black; */
 }
 
