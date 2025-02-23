@@ -103,19 +103,19 @@ table {
 .container .main .cover img {
     width: 700px;
     /* height: 300px; */
-    /* position: relative;
-    z-index: 2; */
-    /* display: inline-block; */
-    /* background-size: cover; */
-    /* background-position: 0 100px; */
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background-size: cover;
+    background-position: 0 100px;
     /* position: absolute; */
-    /* left: 0px; */
-    /* right: 0px; */
+    left: 0px;
+    right: 0px;
     /* border: 1px solid black; */
 }
 
-.container .main .description {
-    font: 22px/33px 'Segoe UI', Tahoma;
+.container .main .description p{
+    font: 24px/33px 'Segoe UI', Tahoma;
     color: #222;
     margin: 30px 0px;
 }
@@ -128,7 +128,7 @@ table {
 }
 
 .container .main p {
-    font: 18px/25px 'Segoe UI', Tahoma;
+    font: 19px/25px 'Segoe UI', Tahoma;
     color: #222;
     font-weight: 400;
     margin: 20px 0px 20px 0px;
