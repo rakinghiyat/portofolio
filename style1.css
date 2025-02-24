@@ -100,19 +100,34 @@ table {
     margin: 25px 0;
     /* text-align: center; */
 }
-.container .main .cover img {
-    width: 700px;
-    /* height: 300px; */
+
+.container .main .cover {
+    width: 2500px;
+    height: 500px;
+    background-image: url(img/cover.jpg);
+    background-size: cover;
+    left: -900px;
+    position: relative;
+    background-position: 0 -200px ;
+    /* position: absolute; */
+    /* border: 1px solid black; */
+    /* z-index: 2; */
+}
+
+/* .container .main .cover {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
     position: relative;
     z-index: 2;
     display: inline-block;
     background-size: cover;
     background-position: 0 100px;
-    /* position: absolute; */
+    position: absolute;
     left: 0px;
     right: 0px;
-    /* border: 1px solid black; */
-}
+    border: 1px solid black;
+} */
 
 .container .main .description p{
     font: 24px/33px 'Segoe UI', Tahoma;
