@@ -127,7 +127,7 @@ table {
     font: 18px/28px 'Segoe UI', Tahoma;
     color: #3f3f3f;
     font-weight: 400;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px;
 }
 
 .bold-title {
@@ -180,8 +180,10 @@ table {
 }
 
 .container .main a {
+    font: 15px/0px 'Segoe UI', Tahoma;
     color: #069;
     padding: 2px;
+    margin-top: 0px;
 }
 
 .container .main a:hover {
@@ -192,14 +194,14 @@ table {
 .container img {
     width: 650px;
     height: auto;
-    margin: 20px 0px;
+    margin: 8px 0px;
 }
 
-.container .smallimg {
+/* .container .smallimg {
     width: 300px;
     display: block;
     margin: 40px auto;
-}
+} */
 
 .container .back {
     width: 650px;
