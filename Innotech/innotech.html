@@ -51,15 +51,46 @@
 
                 <h2>Introduction Problem</h2>
                 <p>Kegiatan Flight Test merupakan tahap akhir dalam proses produksi dan maintenance pesawat maupun helikopter, di mana data penerbangan biasanya didukung oleh sistem FTIS. Pada November-Desember 2022, Flight Test Center (FTC) terlibat dalam Video Downlink (VDL) Development Flight Test untuk pesawat CN235-200 (AX-2349). Selama pelaksanaan, terjadi kendala berupa hilangnya sinyal dari pesawat ke Receiver Ground VDL, sehingga data dan video tidak dapat diterima secara optimal.
-                </p>    
-                <p>Sebagai solusi sementara, antena Receiver Ground VDL digerakkan manual menggunakan software dengan bantuan informasi bearing pesawat yang diperoleh dari aplikasi FlightRadar24 di komputer dan smartphone tim. FlightRadar24 memberikan data real-time penerbangan seperti posisi, arah, ketinggian, dan kecepatan pesawat, serta memiliki fitur replay data penerbangan sebelumnya.    
-                </p>
-                <p>Aplikasi ini berperan penting dalam mendukung kegiatan Flight Test, bahkan fasilitas monitor khusus untuk menampilkan FlightRadar24 disediakan di Mission Operation Control Room (MOCR) di Menara FTC. Untuk mendukung kelancaran Flight Test pesawat N219, FTC juga berlangganan paket premium FlightRadar24 karena beberapa data penting hanya tersedia dalam paket berbayar. Langganan ini diperpanjang sesuai kebutuhan selama program Development Flight Test N219 berlangsung.
                 </p>
 
+                <img src="img/1.jpeg" alt="image">
+                
+                <p>Sebagai solusi sementara, antena Receiver Ground VDL digerakkan manual menggunakan software dengan bantuan informasi bearing pesawat yang diperoleh dari aplikasi FlightRadar24 di komputer dan smartphone tim. FlightRadar24 memberikan data real-time penerbangan seperti posisi, arah, ketinggian, dan kecepatan pesawat, serta memiliki fitur replay data penerbangan sebelumnya.    
+                </p>
+                
+                <img src="img/3.jpeg" alt="mocr">
+                
+                <p>Aplikasi FlightRadar24 berperan penting dalam mendukung kegiatan Flight Test, bahkan fasilitas monitor khusus untuk menampilkan FlightRadar24 disediakan di Mission Operation Control Room (MOCR) di Menara FTC. Untuk mendukung kelancaran Flight Test pesawat N219, FTC juga berlangganan paket premium FlightRadar24 karena beberapa data penting hanya tersedia dalam paket berbayar. Langganan ini diperpanjang sesuai kebutuhan selama program Development Flight Test N219 berlangsung.
+                </p>
+
+                <img src="img/2.png" alt="flightradar24">
+
+                <p><span class="bold-title">FlightRadar24</span> adalah aplikasi populer yang mengumpulkan data pesawat dari ADS-B Receiver di seluruh dunia melalui jaringan sukarelawan, lalu menampilkannya secara real-time di peta internet.</p>
+
+                <img src="img/fr24.png" alt="flightradar24">
+
+                <p>
+                    <span class="bold-title">Kekurangan FlightRadar24 :</span>
+                    <ul>
+                        <li><span class="bold-title">Cakupan Terbatas</span> - Tidak semua wilayah terjangkau, sehingga beberapa penerbangan sulit dilacak.</li>
+                        <li><span class="bold-title">Fitur Terbatas (Gratis)</span> - Data historis dan fitur analisis lengkap hanya tersedia untuk pengguna berbayar.</li>
+                        <li><span class="bold-title">Ketergantungan Internet</span> - Membutuhkan koneksi internet stabil, jika lemah atau tidak ada, fitur pelacakan terganggu.</li>
+                        <li><span class="bold-title">Ketergantungan Data Publik</span> - Mengandalkan receiver sukarelawan yang bisa menyebabkan keterlambatan dan ketidakakuratan data.</li>
+                    </ul>
+                </p>
+                
+                <h3>Pentingnya Data Real-Time untuk Flight Test</h3>
+                <p>Dalam uji penerbangan (Flight Test), data real-time sangat penting untuk memantau kinerja pesawat, mengidentifikasi masalah, dan merespons kondisi penerbangan secara cepat, seperti kecepatan, ketinggian, dan atitude pesawat.</p>
+
+                <h3>Kebutuhan di PTDI</h3>
+                <p>Untuk mendukung Flight Test di PTDI, diperlukan pengembangan ADS-B Receiver yang terkoneksi langsung ke jaringan lokal perusahaan. Dengan sistem ini, tim penguji dapat memantau data penerbangan secara langsung, akurat, dan tanpa bergantung pada pihak ketiga seperti FlightRadar24.</p>
+
+                    
                 <h2>Innovation Description</h2>
                 <p>Inovasi Penerapan & pengembangan ADS-B Receiver untuk mengatasi kendala yang dihadapi dilapangan saat kegiatan Flight Test. Berikut diagram konsep dari penerapan dan pengembangan ADS-B Receiver,
                 </p>
+
+                <img src="img/Deskripsi.png" alt="">
 
                 <p>Diagram di atas menggambarkan konsep penerapan dan pengembangan ADS-B Receiver di Menara FTC PT Dirgantara Indonesia. Pesawat mengirimkan data melalui transponder di frekuensi 1090 MHz yang diterima antena di rooftop Menara FTC dengan jangkauan maksimal 225 Nautical Miles (416,7 km) dalam kondisi LOS (Line of Sight). Data ini diproses dan ditampilkan dalam bentuk peta web yang dapat diakses melalui jaringan internal perusahaan.</p>
                 
@@ -74,6 +105,8 @@
                     <h2>Implementation Plan</h2>
                     <ol>
                         <li><span class="bold-title">ADS-B Receiver </span>
+                        <img src="img/ADS-B.png" alt="ADS-B Receiver">
+
                         <ul>
                             <li><span class="bold-subtitle">Antenna :</span>
                                 Menerima sinyal data pesawat di frekuensi 1090 MHz, mengubahnya menjadi sinyal listrik, dan meneruskan ke receiver. Jenis antena yang digunakan adalah Omnidirectional.</li>
@@ -91,6 +124,7 @@
                         </ul>
                         </li>
                         <li><span class="bold-title">3D Visual Plane</span>
+                        <img src="img/3D.png" alt="3D Visual Plane">
                         <ul>
                             <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat menjadi visualisasi peta dunia berbasis web. Data pesawat tersedia dalam format JSON yang bisa dimanfaatkan untuk kebutuhan 3D Visual.</li>
@@ -113,6 +147,7 @@
                         </ul>
                         </li>
                         <li><span class="bold-title">Plane Notification Alert</span>
+                        <img src="img/Notif.png" alt="">
                         <ul>
                             <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON di:
@@ -129,6 +164,7 @@
                         </ul>
                         </li>
                         <li><span class="bold-title">Automatic Rotor Antenna</span>
+                            <img src="img/Rotor.png" alt="">
                             <ul>
                                 <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
                                     Mengolah data ADS-B dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON.</li>
@@ -144,7 +180,9 @@
                                     Berputar sesuai perintah untuk melacak posisi pesawat secara otomatis.</li>
                             </ul>
                         </li>
-                        <li><span class="bold-title">ADS-B Receiver Portable</span>
+                        <li>
+                            <span class="bold-title">ADS-B Receiver Portable</span>
+                            <img src="img/Portable.png" alt="">
                             <ul>
                                 <li><span class="bold-subtitle">Antenna :</span>
                                     Menerima sinyal pesawat di frekuensi UHF (1090 MHz) dengan jenis omnidirectional.</li>

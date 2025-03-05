@@ -117,10 +117,10 @@ table {
 }
 
 .container .main h3 {
-    font: 20px/35px 'Segoe UI', Tahoma;
-    font-weight: 700;
+    font: 18px/28px 'Segoe UI', Tahoma;
+    font-weight: 600;
     color: #222;
-    margin-top: 50px;
+    margin-bottom: -18px;
 }
 
 .container .main p {
@@ -130,12 +130,18 @@ table {
     margin: 20px 0px 20px 0px;
 }
 
+.bold-title {
+    font: 18px/28px 'Segoe UI', Tahoma;
+    font-weight: 600;
+    color: #222;
+}
+
 .container .main ul {
     font: 18px/28px 'Segoe UI', Tahoma;
-    color: #222;
+    color: #3f3f3f;
     list-style:disc;
-    margin-left: 20px;
-    font-weight: 700;
+    margin: 10px 0 20px 20px;
+    font-weight: 400;
 }   
 
 .container .main ul li p {
@@ -183,10 +189,16 @@ table {
     background-color: #069;
 }
 
-.container .main img {
+.container img {
     width: 650px;
     height: auto;
     margin: 20px 0px;
+}
+
+.container .smallimg {
+    width: 300px;
+    display: block;
+    margin: 40px auto;
 }
 
 .container .back {
