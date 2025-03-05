@@ -116,6 +116,13 @@ table {
     margin-top: 50px;
 }
 
+.container .main h3 {
+    font: 20px/35px 'Segoe UI', Tahoma;
+    font-weight: 700;
+    color: #222;
+    margin-top: 50px;
+}
+
 .container .main p {
     font: 18px/28px 'Segoe UI', Tahoma;
     color: #3f3f3f;
@@ -124,13 +131,47 @@ table {
 }
 
 .container .main ul {
-    font: 19px/25px 'Segoe UI', Tahoma;
+    font: 18px/28px 'Segoe UI', Tahoma;
     color: #222;
-    font-weight: 400;
-    margin: 20px 0px 20px 0px;
     list-style:disc;
     margin-left: 20px;
+    font-weight: 700;
 }   
+
+.container .main ul li p {
+    margin: 5px 0;
+}
+
+.container .main ol {
+    font: 18px/28px 'Segoe UI', Tahoma;
+    color: #222;
+    font-weight: 700;
+    list-style: decimal;
+    margin: 20px 0px 0px 20px;
+}
+
+.implementation .bold-subtitle {
+    font: 18px/28px 'Segoe UI', Tahoma;
+    color: #222;
+    font-weight: 500;   
+}
+
+.implementation ol li ul li {
+    margin: 5px 0;
+    font: 18px/28px 'Segoe UI', Tahoma;
+    color: #3f3f3f;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+.implementation ul .sublist {
+    list-style: circle;
+}
+
+.implementation ul .bold-subsubtitle {
+    color: #222;
+    font-weight: 500;   
+}
 
 .container .main a {
     color: #069;

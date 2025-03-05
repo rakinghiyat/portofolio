@@ -36,7 +36,7 @@
                 <p>Innotech Awards 2023 adalah kompetisi inovasi teknologi pertama yang diselenggarakan oleh Direktorat Niaga, Teknologi dan Pengembangan, PT Dirgantara Indonesia.</p>
                 <p>Kegiatan ini merupakan wadah bagi seluruh karyawan PT Dirgantara Indonesia untuk menuangkan segala bentuk ide dan inovasi demi kemajuan bisnis dan keberlanjutan perusahaan mengingat perkembangan dunia yang sangat cepat dan tidak dapat diprediksi.</p>
             </div>
-            <div class="subjudul"><h2>Gambaran Umum Perlombaan</h2></div>
+            <div class="judul"><h2>Gambaran Umum Perlombaan</h2></div>
             <div class="articel">
                 <p>Innotech Awards 2023 adalah ajang kompetisi inovasi pertama di PT Dirgantara Indonesia yang mengusung tema “Rewarding Bright Minds”, mendorong seluruh karyawan aktif untuk berkontribusi dengan ide-ide inovatif, baik secara individu maupun kelompok lintas direktorat. Ide yang diajukan bersifat orisinal, aplikatif, dan belum pernah dikomersialisasikan maupun diikutsertakan dalam lomba sejenis. Peserta hanya diperbolehkan mengirimkan satu proposal inovasi yang dapat mencakup pengembangan produk, perbaikan proses bisnis, efisiensi fasilitas, hingga peluang bisnis baru.</p>
                 <p>Proses seleksi akan menilai aspek inovasi, originalitas, aplikasi, efisiensi biaya, keberlanjutan, dampak bisnis, dan potensi kolaborasi lintas bidang. Peserta terbaik akan maju ke tahap final untuk mempresentasikan ide di hadapan juri, dengan keputusan juri bersifat mutlak dan rahasia proposal dijamin menjadi hak milik perusahaan.</p>
@@ -49,15 +49,120 @@
                 <img src="img/photo1.jpeg" alt="photo">
 
 
-                <h2>Problem Statement</h2>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam quae, beatae corporis quia eius sint deserunt, aspernatur eum sit dolore! Maxime voluptatem excepturi necessitatibus porro natus quas a itaque nihil dolores impedit, placeat corporis minus libero quia, adipisci cumque eos voluptate! Modi ipsa necessitatibus illo laudantium tenetur dicta obcaecati!</p>
-
-                <img src="img/img3.jpeg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihil dicta illo nesciunt dolorum modi tempore, sapiente dolore excepturi! Consectetur ullam velit molestiae hic neque quae voluptatibus nulla inventore, excepturi soluta, delectus ratione cupiditate non! Accusamus repellat quos labore veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, corporis! Magnam sapiente modi quasi culpa corrupti! Sint repudiandae ex harum.
+                <h2>Introduction Problem</h2>
+                <p>Kegiatan Flight Test merupakan tahap akhir dalam proses produksi dan maintenance pesawat maupun helikopter, di mana data penerbangan biasanya didukung oleh sistem FTIS. Pada November-Desember 2022, Flight Test Center (FTC) terlibat dalam Video Downlink (VDL) Development Flight Test untuk pesawat CN235-200 (AX-2349). Selama pelaksanaan, terjadi kendala berupa hilangnya sinyal dari pesawat ke Receiver Ground VDL, sehingga data dan video tidak dapat diterima secara optimal.
+                </p>    
+                <p>Sebagai solusi sementara, antena Receiver Ground VDL digerakkan manual menggunakan software dengan bantuan informasi bearing pesawat yang diperoleh dari aplikasi FlightRadar24 di komputer dan smartphone tim. FlightRadar24 memberikan data real-time penerbangan seperti posisi, arah, ketinggian, dan kecepatan pesawat, serta memiliki fitur replay data penerbangan sebelumnya.    
+                </p>
+                <p>Aplikasi ini berperan penting dalam mendukung kegiatan Flight Test, bahkan fasilitas monitor khusus untuk menampilkan FlightRadar24 disediakan di Mission Operation Control Room (MOCR) di Menara FTC. Untuk mendukung kelancaran Flight Test pesawat N219, FTC juga berlangganan paket premium FlightRadar24 karena beberapa data penting hanya tersedia dalam paket berbayar. Langganan ini diperpanjang sesuai kebutuhan selama program Development Flight Test N219 berlangsung.
                 </p>
 
+                <h2>Innovation Description</h2>
+                <p>Inovasi Penerapan & pengembangan ADS-B Receiver untuk mengatasi kendala yang dihadapi dilapangan saat kegiatan Flight Test. Berikut diagram konsep dari penerapan dan pengembangan ADS-B Receiver,
+                </p>
 
+                <p>Diagram di atas menggambarkan konsep penerapan dan pengembangan ADS-B Receiver di Menara FTC PT Dirgantara Indonesia. Pesawat mengirimkan data melalui transponder di frekuensi 1090 MHz yang diterima antena di rooftop Menara FTC dengan jangkauan maksimal 225 Nautical Miles (416,7 km) dalam kondisi LOS (Line of Sight). Data ini diproses dan ditampilkan dalam bentuk peta web yang dapat diakses melalui jaringan internal perusahaan.</p>
+                
+                <ul>
+                    <li><span class="bold-title">3D Visual Plane</span><p>Menampilkan visualisasi pesawat dalam tampilan orang ketiga (third-person view) menggunakan data dari ADS-B Receiver, mendukung visualisasi saat Flight Test.</p></li>
+                    <li><span class="bold-title">Plane Notification Alert</span><p>Mengirimkan notifikasi terkait aktivitas penerbangan (take-off dan landing) ke email atau media sosial karyawan yang berkepentingan.</p></li>
+                    <li><span class="bold-title">Automatic Rotor Antenna</span><p>Solusi otomatisasi antena telemetry di Menara FTC yang saat ini mengalami kerusakan, agar antena dapat melacak pesawat secara otomatis.</p></li>
+                    <li><span class="bold-title">ADS-B Receiver Portable</span><p>Versi portable yang tidak bergantung pada jaringan internet dan dapat dibawa ke luar area PTDI untuk mendukung Flight Test di lokasi lain dengan tetap menyajikan data pesawat secara real-time.</p></li>
+                </ul>
+                
+                <div class="implementation">
+                    <h2>Implementation Plan</h2>
+                    <ol>
+                        <li><span class="bold-title">ADS-B Receiver </span>
+                        <ul>
+                            <li><span class="bold-subtitle">Antenna :</span>
+                                Menerima sinyal data pesawat di frekuensi 1090 MHz, mengubahnya menjadi sinyal listrik, dan meneruskan ke receiver. Jenis antena yang digunakan adalah Omnidirectional.</li>
+                            <li><span class="bold-subtitle">Receiver :</span>
+                                Terdiri dari beberapa perangkat keras dan lunak, yaitu:
+                                <ul class="sublist">
+                                    <li><span class="bold-subsubtitle">Mode-S Beast GPS Jetvision :</span> Mengubah sinyal dari antena menjadi data mentah (raw).</li>
+                                    <li><span class="bold-subsubtitle">Raspberry Pi 3 Model B+ :</span> Menjalankan program dan menghubungkan receiver ke jaringan internal PTDI.</li>
+                                    <li><span class="bold-subsubtitle">Virtual Radar Server (VRS) :</span> Mengolah data raw menjadi visualisasi peta dunia beserta informasi posisi pesawat berbasis web.</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-subtitle">Network :</span>
+                                Receiver terhubung ke jaringan lokal PTDI melalui Switch IT PTDI, memungkinkan data diakses dari komputer manapun di jaringan yang sama melalui alamat: http://10.180.110.25/VirtualRadar/desktop.html, menampilkan peta dunia dan informasi pesawat terdeteksi.
+                            </li>
+                        </ul>
+                        </li>
+                        <li><span class="bold-title">3D Visual Plane</span>
+                        <ul>
+                            <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                                Mengolah data ADS-B dari pesawat menjadi visualisasi peta dunia berbasis web. Data pesawat tersedia dalam format JSON yang bisa dimanfaatkan untuk kebutuhan 3D Visual.</li>
+                            <li><span class="bold-subtitle">JSON :</span>
+                                Format data terstruktur yang dapat diakses dari VRS melalui link:
+                                http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
+                            <li><span class="bold-subtitle">Program Python :</span>
+                                Terdiri dari dua program:
+                                <ul class="sublist">
+                                    <li><span class="bold-subsubtitle">Get Data JSON :</span> Mengambil data dari VRS dan menyimpannya dalam format CSV.</li>
+                                    <li><span class="bold-subsubtitle">Parsing to X-Plane :</span> Mengubah data CSV agar bisa ditampilkan sebagai pesawat di simulator X-Plane melalui plugin LiveTraffic.</li>
+                                </ul>
+                            </li>
+                            <li><span class="bold-subtitle">Data CSV :</span>
+                                Format data sederhana berisi informasi penerbangan yang dipisahkan oleh koma, digunakan sebagai perantara antara VRS dan X-Plane.</li>
+                            <li><span class="bold-subtitle">Plugin LiveTraffic :</span>
+                                Plugin di X-Plane yang menampilkan lalu lintas penerbangan real-time menggunakan data tracking publik.</li>
+                            <li><span class="bold-subtitle">X-Plane :</span>
+                                Software flight simulator dari Laminar Research yang digunakan untuk visualisasi 3D, mendukung Windows, macOS, dan Linux (versi terbaru: X-Plane 12).</li>
+                        </ul>
+                        </li>
+                        <li><span class="bold-title">Plane Notification Alert</span>
+                        <ul>
+                            <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                                Mengolah data ADS-B dari pesawat dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON di:
+                                http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
+                            <li><span class="bold-subtitle">Plugin PlaneAlerter :</span>
+                                Plugin yang mengirimkan notifikasi otomatis jika pesawat terdeteksi sesuai kriteria tertentu (registrasi, ketinggian, kecepatan, dll.).</li>
+                            <li><span class="bold-subtitle">Internet & Email :</span>
+                                Internet PTDI digunakan agar notifikasi bisa dikirim ke email, yang bisa disesuaikan penerimanya (lebih dari satu email).</li>
+                            <li><span class="bold-subtitle">WhatsApp Business API :</span>
+                                Dapat digunakan sebagai opsi tambahan untuk mengirim notifikasi ke WhatsApp karyawan atau pihak terkait secara otomatis.</li>
+                            <li><span class="bold-subtitle">WhatsApp :</span>
+                                Aplikasi pesan lintas platform yang memungkinkan penerimaan notifikasi secara langsung melalui teks atau media lainnya.
+                                </li>
+                        </ul>
+                        </li>
+                        <li><span class="bold-title">Automatic Rotor Antenna</span>
+                            <ul>
+                                <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                                    Mengolah data ADS-B dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON.</li>
+                                <li><span class="bold-subtitle">Program Auto Track :</span>
+                                    Program desktop (dengan GUI) yang menghitung sudut bearing antara antena dan pesawat, menggunakan input manual atau otomatis dari data JSON. Perintah sudut bearing dikirim ke Arduino.</li>
+                                <li><span class="bold-subtitle">Arduino :</span>
+                                    Mengubah perintah dari Auto Track menjadi sinyal untuk mengontrol motor stepper.</li>
+                                <li><span class="bold-subtitle">Driver Controller :</span>
+                                    Menerima sinyal dari Arduino, mengatur tegangan dan arus ke motor stepper.</li>
+                                <li><span class="bold-subtitle">Motor Stepper :</span>
+                                    Menggerakkan antena telemetry berdasarkan perintah yang diterima.</li>
+                                <li><span class="bold-subtitle">Antenna Telemetry :</span>
+                                    Berputar sesuai perintah untuk melacak posisi pesawat secara otomatis.</li>
+                            </ul>
+                        </li>
+                        <li><span class="bold-title">ADS-B Receiver Portable</span>
+                            <ul>
+                                <li><span class="bold-subtitle">Antenna :</span>
+                                    Menerima sinyal pesawat di frekuensi UHF (1090 MHz) dengan jenis omnidirectional.</li>
+                                <li><span class="bold-subtitle">RTL-SDR :</span>
+                                    Receiver berbasis Software Defined Radio (SDR) yang mengubah sinyal RF menjadi data digital.</li>
+                                <li><span class="bold-subtitle">Raspberry Pi :</span>
+                                    Menjalankan program pengolahan data dan visualisasi menggunakan Virtual Radar Server.</li>
+                                <li><span class="bold-subtitle">Power Bank :</span>
+                                    Menyediakan daya 5VDC untuk semua perangkat.</li>
+                                <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                                    Mengolah data pesawat dan menampilkan peta serta informasi pesawat dalam bentuk web base.</li>
+                                <li><span class="bold-subtitle">Display Touch Screen 7” :</span>
+                                    Menampilkan data dan peta langsung di layar serta memudahkan pengguna memberi input langsung ke Raspberry Pi.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                
                 <h2>Closing thoughts</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque omnis, repudiandae earum corrupti nobis tempora accusamus et itaque molestiae, reiciendis tenetur explicabo. Consequuntur, sint tempore illo dicta quaerat repudiandae!</p>
 
