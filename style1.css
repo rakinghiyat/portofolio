@@ -120,7 +120,7 @@ table {
     font: 18px/28px 'Segoe UI', Tahoma;
     font-weight: 600;
     color: #222;
-    margin-bottom: -18px;
+    margin-bottom: 20px;
 }
 
 .container .main p {
@@ -132,15 +132,16 @@ table {
 
 .bold-title {
     font: 18px/28px 'Segoe UI', Tahoma;
-    font-weight: 600;
+    font-weight: 700;
     color: #222;
+    /* padding: 30px 0px; */
 }
 
 .container .main ul {
     font: 18px/28px 'Segoe UI', Tahoma;
     color: #3f3f3f;
     list-style:disc;
-    margin: 10px 0 20px 20px;
+    margin: 30px 0 20px 20px;
     font-weight: 400;
 }   
 
@@ -194,7 +195,7 @@ table {
 .container img {
     width: 650px;
     height: auto;
-    margin: 8px 0px;
+    margin: 10px 0px;
 }
 
 /* .container .smallimg {
