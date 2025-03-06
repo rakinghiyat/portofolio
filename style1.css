@@ -157,13 +157,13 @@ table {
     margin: 20px 0px 0px 20px;
 }
 
-.implementation .bold-subtitle {
+.main .bold-subtitle {
     font: 18px/28px 'Segoe UI', Tahoma;
     color: #222;
     font-weight: 500;   
 }
 
-.implementation ol li ul li {
+.main ol li ul li {
     margin: 5px 0;
     font: 18px/28px 'Segoe UI', Tahoma;
     color: #3f3f3f;
@@ -171,11 +171,11 @@ table {
     margin: 10px 0px;
 }
 
-.implementation ul .sublist {
+.main ul .sublist {
     list-style: circle;
 }
 
-.implementation ul .bold-subsubtitle {
+.main ul .bold-subsubtitle {
     color: #222;
     font-weight: 500;   
 }

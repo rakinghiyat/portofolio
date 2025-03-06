@@ -204,6 +204,45 @@
                         </li>
                     </ol>
                 </div>
+
+                <h2>Implementation Result</h2>
+                <ol>
+                    <li>Hasil Penerapan ADS-B Receiver
+                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil penerapan ADS-B Receiver di Menara FTC yang sudah diimplementasikan. Hasil implementasi Antenna Receiver,</p>
+                        <img src="" alt="Antenna Receiver">
+                        <img src="" alt="Receiver ADSB">
+                        <p>Tampilan map Receiver yang diakses pada web browser dengan alamat, http://10.110.180.25/VirtualRadar/</p>
+                        <img src="" alt="Map Web Browser">
+                        <p>Berikut tampilan histori jangkauan Receiver, dapat menerima altitude pesawat pada <9999 - >30000 feet dengan jarak terjauh ± 177 nautical miles</p>
+                        <img src="" alt="Range Receive">
+                        <p>Tampilan pada map Virtual Radar Server dapat dilakukan kustomisasi sesuai dengan
+                        kebutuhan, berikut ini adalah beberapa hasil kustomisasi layer dari map,</p>
+                        <img src="" alt="Custom Map Topo">
+                        <img src="" alt="Custom Map Satellite ">
+                        <img src="" alt=" Custom Map Carto Dark">
+                    </li>
+                    <li>Hasil Pengembangan 3D Visual
+                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan 3D Visual dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json,</p>
+                        <img src="" alt="Format JSON">
+                        <p>Berikut dokumentasi dari program GetJSON.py untuk mengambil data JSON, data disimpan dengan format CSV,</p>
+                        <img src="" alt="GetJSON.py">
+                        <p>Data CSV hasil dari program GetJSON.py dengan pengambilan data per detik</p>
+                        <img src="" alt="DataCSV.csv">
+                        <p>Program python yang kedua bernama SendTraffic.py yang digunakan untuk mengirim data CSV ke plugin Live Traffic, dijalankan melalui Terminal Command Line</p>
+                        <img src="" alt="SendTraffic.py">
+                        <p>Selanjutnya tampilan dari plugin Live Traffic yang berjalan di aplikasi simulator XPlane,</p>
+                        <img src="" alt="LiveTraffic">
+                        <p>Hasil pengembangan 3D Visual pada program XPlane dan membandingkan map XPlane dengan map Virtual Radar Server yang diakses pada web browser,</p>
+                        <img src="" alt="Hasil 3D Visual">
+                        <img src="" alt="Hasil 3D Visual">
+                        <p>https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I</p>
+                    </li>
+                    <li>Hasil Pengembangan Plane Notification Alert
+                        <p></p>
+                    </li>
+                </ol>
+                
+
                 
                 <h2>Closing thoughts</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque omnis, repudiandae earum corrupti nobis tempora accusamus et itaque molestiae, reiciendis tenetur explicabo. Consequuntur, sint tempore illo dicta quaerat repudiandae!</p>
