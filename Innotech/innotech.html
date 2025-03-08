@@ -209,45 +209,104 @@
                 <ol>
                     <li>Hasil Penerapan ADS-B Receiver
                         <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil penerapan ADS-B Receiver di Menara FTC yang sudah diimplementasikan. Hasil implementasi Antenna Receiver,</p>
-                        <img src="" alt="Antenna Receiver">
-                        <img src="" alt="Receiver ADSB">
+                        <img src="img/Antenna.jpg" alt="Antenna Receiver" style="width:30%; margin-left:10px">
+                        <img src="img/Receiver.png" alt="Receiver ADSB" style="width: 63.5%; position: absolute; ">
+
                         <p>Tampilan map Receiver yang diakses pada web browser dengan alamat, http://10.110.180.25/VirtualRadar/</p>
-                        <img src="" alt="Map Web Browser">
+                        <img src="img/MAP1.png" alt="Map Web Browser" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Berikut tampilan histori jangkauan Receiver, dapat menerima altitude pesawat pada <9999 - >30000 feet dengan jarak terjauh ± 177 nautical miles</p>
-                        <img src="" alt="Range Receive">
+                        <img src="img/Range.png" alt="Range Receive" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Tampilan pada map Virtual Radar Server dapat dilakukan kustomisasi sesuai dengan
                         kebutuhan, berikut ini adalah beberapa hasil kustomisasi layer dari map,</p>
-                        <img src="" alt="Custom Map Topo">
-                        <img src="" alt="Custom Map Satellite ">
-                        <img src="" alt=" Custom Map Carto Dark">
+                        <img src="img/map2.png" alt="Custom Map Topo" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
+                        <img src="img/map4.png" alt="Custom Map Satellite" style=" width:100%;margin: 40px auto ;display: block;">
+                        <img src="img/map5.png" alt=" Custom Map Carto Dark" style=" width:100%;margin: 0px auto 50px auto;display: block;">
                     </li>
                     <li>Hasil Pengembangan 3D Visual
                         <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan 3D Visual dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json,</p>
-                        <img src="" alt="Format JSON">
+                        <img src="img/JSON.png" alt="Format JSON" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Berikut dokumentasi dari program GetJSON.py untuk mengambil data JSON, data disimpan dengan format CSV,</p>
-                        <img src="" alt="GetJSON.py">
+                        <img src="img/GetJSON.jpeg" alt="GetJSON.py" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Data CSV hasil dari program GetJSON.py dengan pengambilan data per detik</p>
-                        <img src="" alt="DataCSV.csv">
-                        <p>Program python yang kedua bernama SendTraffic.py yang digunakan untuk mengirim data CSV ke plugin Live Traffic, dijalankan melalui Terminal Command Line</p>
-                        <img src="" alt="SendTraffic.py">
+                        <img src="img/csv.jpeg" alt="DataCSV.csv" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
+                        <p>Program python yang kedua bernama SendTraffic.py yang digunakan untuk mengirim data CSV ke plugin Live Traffic, dijalankan melalui Terminal Command Line,</p>
+                        <img src="img/SendTraffic.jpeg" alt="SendTraffic.py" style=" width: 100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Selanjutnya tampilan dari plugin Live Traffic yang berjalan di aplikasi simulator XPlane,</p>
-                        <img src="" alt="LiveTraffic">
+                        <img src="img/LiveTraffic.jpeg" alt="LiveTraffic" style=" width: 100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Hasil pengembangan 3D Visual pada program XPlane dan membandingkan map XPlane dengan map Virtual Radar Server yang diakses pada web browser,</p>
-                        <img src="" alt="Hasil 3D Visual">
-                        <img src="" alt="Hasil 3D Visual">
-                        <p>https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I</p>
+                        <img src="img/Hasil1.jpeg" alt="Hasil 3D Visual" style=" width: 100%;margin-left:auto;margin-right:auto;display: block;">
+                        <img src="img/Hasil2.jpeg" alt="Hasil 3D Visual" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
+                        <a href="https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I" target="_blank">Cuplikan vidio percobaan pengembangan 3D Visual</a>
                     </li>
                     <li>Hasil Pengembangan Plane Notification Alert
-                        <p></p>
+                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Plane Notification Alert dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json, Tampilan utama dari Plugin Plane Alerter saat pertama kali dijalankan, belum terdapat kondisi yang terbaca oleh program,</p>
+                        <img src="img/PlaneAlerter.jpeg" alt="PlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
+                        <p>Memberikan kondisi untuk Plugin Plane Alerter, dengan trigger registrasi pesawat PKGTD sebagai uji coba program,</p>
+                        <img src="img/Condition.jpeg" alt="ConditionPlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
+                        <p>Program Plugin Plane Alerter berjalan dan langsung mendeteksi pesawat dengan kondisi yang sudah diberikan, maka ketika kondisi sesuai program akan mengirimkan email yang sudah didaftarkan sebagai penerima,
+                        </p>
+                        <img src="img/HasilPlaneAlerter.jpeg" alt="HasilPlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
+                        <p>Selanjutnya dokumentasi dari kotak masuk email penerima notifikasi,
+                        </p>
+                        <img src="img/Email.jpeg" alt="EmailPenerima" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
+                        <p>Berikut adalah isi dari pesan email penerima yang dikirimkan oleh Plugin PlaneAlerter, berisi data informasi dari pesawat PK-GTD, sesuai dengan perintah kondisi yang diberikan,</p>
+                        <img src="img/IsiEmail.jpeg" alt="IsiEmailPlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
+                        <a href="https://youtu.be/N8AVjI3eY7o?si=404GwJRUCRZDvhJb" target="_blank">Cuplikan vidio percobaan pengembangan PlaneAlerter</a>
                     </li>
+                    <li>Hasil Pengembangan Portable ADS-B Receiver</li>
+                    <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Portable ADS-B Receiver. Receiver dirancang dengan gabungan beberapa perangkat,</p>
+                    <!-- <img src="img/Antenna.jpg" alt="Antenna Receiver" style="width:30%; margin-left:10px"> <img src="img/Receiver.png" alt="Receiver ADSB" style="width: 63.5%; position: absolute; "> -->
+                    <img src="img/PortableADS-B.png" alt="PortableADS-B" style=" width: 80%; margin: 40px auto 0px auto; display: block;">
+                    <p>Kegiatan uji coba dari dari hasil pengembangan Portable ADS-B Receiver, untuk menguji penerimaan data,</p>
+                    <img src="img/UjiCobaPortable.jpeg" alt="UjiCobaPortable-ADSB" style=" width: 70%; margin: 40px auto 0px auto; display: block;">
                 </ol>
+
+                <h2>Technology & Resources</h2>
+
+                <p>Tulisan ini membahas penerapan dan pengembangan ADS-B (Automatic Dependent Surveillance - Broadcast) Receiver, yaitu teknologi berbasis satelit yang digunakan untuk menyampaikan informasi pesawat seperti posisi, kecepatan, arah, ketinggian, dan identitas pesawat melalui frekuensi 1090 MHz (Mode S).</p>
+                <p>ICAO mewajibkan semua pesawat sipil angkut menggunakan teknologi ADS-B sebagai pengganti radar konvensional, dengan Mode S 1090 MHz sebagai standar global.</p>
+
+                <ul>
+                    <li><span class="bold-title">Automatic</span> - Informasi ditransmisikan otomatis tanpa campur tangan pilot.</li>
+                    <li><span class="bold-title">Dependent</span> - Data posisi dan kecepatan berasal dari GPS atau sistem navigasi pesawat.</li>
+                    <li><span class="bold-title">Surveillance</span> - Menyediakan data posisi, kecepatan, identitas, dll.</li>
+                    <li><span class="bold-title">Broadcast</span> - Data dipancarkan terus-menerus tanpa perlu interogasi eksternal.</li>
+                </ul>
+
+                <img src="img/ProsesADS-B.png" alt="ProsesADS-B" style="width:70%;margin-left:auto;margin-right:auto;display: block;">
+
+                <p>Gambar diatas merupakan proses ADS-B Receiver bekerja, pertama Pesawat menerima informasi posisi dari GNSS (Global Navigation Satellite System), kemudian Transponder ADS-B di pesawat menyiarkan (broadcast) data ke segala arah dan ADS-B Receiver di darat menangkap data tersebut, selanjutnya Data diolah dan ditampilkan secara real-time di layar Air Traffic Control (ATC), mencakup informasi lengkap seperti ketinggian, kecepatan, dan identitas pesawat. Keunggulan dari ADS-B yaitu dapat update data cepat (setiap 0,5 - 1 detik), menghasilkan data lebih akurat.</p>
                 
 
                 
                 <h2>Closing thoughts</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium atque omnis, repudiandae earum corrupti nobis tempora accusamus et itaque molestiae, reiciendis tenetur explicabo. Consequuntur, sint tempore illo dicta quaerat repudiandae!</p>
+                
+                <p>Inovasi Penerapan dan Pengembangan ADS-B di PT Dirgantara Indonesia mendukung kegiatan Flight Test melalui beberapa poin utama:</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat temporibus pariatur, eius ea optio modi minima maxime, aperiam labore aspernatur sint laborum saepe debitis, earum rerum numquam laboriosam obcaecati animi?</p>
+                <ol>
+                    <li><span class="bold-title">Mengurangi Ketergantungan pada FlightRadar24</span><p>Menggunakan Receiver ADS-B sendiri untuk pemantauan real-time, mengatasi keterlambatan dan keterbatasan data.</p></li>
+                    <li><span class="bold-title">Visualisasi 3D dan Data Real-time</span><p>Menampilkan visualisasi 3D dan data penerbangan real-time di MOCR, meningkatkan analisis dan pengambilan keputusan.</p></li>
+                    <li><span class="bold-title">Aplikasi Notifikasi Pesawat</span><p>Mengembangkan aplikasi notifikasi kondisi pesawat uji agar pihak terkait dapat merespons lebih cepat.</p></li>
+                    <li><span class="bold-title">Automatic Rotor Antenna</span><p>Mendukung sistem FTIS Telemetry, meningkatkan kualitas pengumpulan data selama uji terbang.</p></li>
+                    <li><span class="bold-title">Receiver ADS-B Portable</span><p>Memungkinkan pemantauan di berbagai lokasi, meningkatkan fleksibilitas dan mobilitas saat Flight Test.</p></li>
+                </ol>
+
+                <h3>Keunggulan Inovasi</h3>
+
+                <ul>
+                    <li>Meningkatkan efisiensi operasional dan menghemat waktu serta sumber daya.
+                    </li>
+                    <li>Menyediakan data lengkap untuk analisis mendalam.
+                    </li>
+                    <li>Mendukung respons cepat melalui aplikasi notifikasi.
+                    </li>
+                    <li>Menawarkan fleksibilitas tinggi dengan Receiver ADS-B portable.
+                    </li>
+                    <li>Menjadikan PTDI sebagai perusahaan yang mengadopsi teknologi terkini.
+                    </li>
+                </ul>
+                <p>Inovasi ini diharapkan menjadi fondasi penting untuk meningkatkan kualitas, efisiensi, dan daya saing PTDI di masa depan, sekaligus memperkuat posisinya di industri penerbangan global.
+                </p>
 
             </div>
         </div>
