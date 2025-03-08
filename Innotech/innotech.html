@@ -63,8 +63,10 @@
                 <p>Aplikasi FlightRadar24 berperan penting dalam mendukung kegiatan Flight Test, bahkan fasilitas monitor khusus untuk menampilkan FlightRadar24 disediakan di Mission Operation Control Room (MOCR) di Menara FTC. Untuk mendukung kelancaran Flight Test pesawat N219, FTC juga berlangganan paket premium FlightRadar24 karena beberapa data penting hanya tersedia dalam paket berbayar. Langganan ini diperpanjang sesuai kebutuhan selama program Development Flight Test N219 berlangsung.
                 </p>
 
-                <img src="img/2.png" alt="flightradar24">
+                <div class="link">
+                    <img src="img/2.png" alt="flightradar24">
                 <a href="https://www.flightradar24.com/">flightradar24.com</a>
+                </div>
 
                 <p><span class="bold-title">FlightRadar24</span> adalah aplikasi populer yang mengumpulkan data pesawat dari ADS-B Receiver di seluruh dunia melalui jaringan sukarelawan, lalu menampilkannya secara real-time di peta internet.</p>
 
@@ -107,7 +109,9 @@
                     <ol>
                         <li>
                             <span class="bold-title">ADS-B Receiver </span>
-                            <img src="img/ADS-B.png" alt="ADS-B Receiver" style="width:70%;margin-left:auto;margin-right:auto;display: block;">
+                            <div class="list-image">
+                                <img src="img/ADS-B.png" alt="ADS-B Receiver">
+                            </div>
                         <ul>
                             <li><span class="bold-subtitle">Antenna :</span>
                                 Menerima sinyal data pesawat di frekuensi 1090 MHz, mengubahnya menjadi sinyal listrik, dan meneruskan ke receiver. Jenis antena yang digunakan adalah Omnidirectional.</li>
@@ -116,7 +120,7 @@
                                 <ul class="sublist">
                                     <li><span class="bold-subsubtitle">Mode-S Beast GPS Jetvision :</span> Mengubah sinyal dari antena menjadi data mentah (raw).</li>
                                     <li><span class="bold-subsubtitle">Raspberry Pi 3 Model B+ :</span> Menjalankan program dan menghubungkan receiver ke jaringan internal PTDI.</li>
-                                    <li><span class="bold-subsubtitle">Virtual Radar Server (VRS) :</span> Mengolah data raw menjadi visualisasi peta dunia beserta informasi posisi pesawat berbasis web.</li>
+                                    <li><span class="bold-subsubtitle">Virtual Radar Server (VRS) :</span> Mengolah data raw menjadi visualisasi peta dunia beserta informasi posisi pesawat berbasis web. <a href="https://www.virtualradarserver.co.uk/">(virtualradarserver.co.uk)</a></li>
                                 </ul>
                             </li>
                             <li><span class="bold-subtitle">Network :</span>
@@ -126,7 +130,10 @@
                         </li>
                         <li>
                             <span class="bold-title">3D Visual Plane</span>
-                            <img src="img/3D.png" alt="3D Visual Plane" style="width:70%;margin-left:auto;margin-right:auto;display: block;">
+                            <div class="list-image">
+                                <img src="img/3D.png" alt="3D Visual Plane">
+                            </div>
+                            
                         <ul>
                             <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat menjadi visualisasi peta dunia berbasis web. Data pesawat tersedia dalam format JSON yang bisa dimanfaatkan untuk kebutuhan 3D Visual.</li>
@@ -150,7 +157,10 @@
                         </li>
                         <li>
                             <span class="bold-title">Plane Notification Alert</span>
-                            <img src="img/Notif.png" alt="Notif Image" style="width:65%;margin-left:auto;margin-right:auto;display: block;">
+                            <div class="list-image">
+                                <img src="img/Notif.png" alt="Notif Image">
+                            </div>
+                            
                         <ul>
                             <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON di:
@@ -168,7 +178,9 @@
                         </li>
                         <li>
                             <span class="bold-title">Automatic Rotor Antenna</span>
-                            <img src="img/Rotor.png" alt="" style="width:65%;margin-left:auto;margin-right:auto;display: block;">
+                            <div class="list-image">
+                                <img src="img/Rotor.png" alt="Automatic Rotor Antenna">
+                            </div>
                             <ul>
                                 <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
                                     Mengolah data ADS-B dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON.</li>
@@ -186,7 +198,9 @@
                         </li>
                         <li>
                             <span class="bold-title">ADS-B Receiver Portable</span>
-                            <img src="img/Portable.png" alt="" style="width:80%;margin-left:auto;margin-right:auto;display: block;">
+                            <div class="list-image">
+                                <img src="img/Portable.png" alt="ADS-B Receiver Portable">
+                            </div>
                             <ul>
                                 <li><span class="bold-subtitle">Antenna :</span>
                                     Menerima sinyal pesawat di frekuensi UHF (1090 MHz) dengan jenis omnidirectional.</li>
@@ -218,9 +232,18 @@
                         <img src="img/Range.png" alt="Range Receive" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Tampilan pada map Virtual Radar Server dapat dilakukan kustomisasi sesuai dengan
                         kebutuhan, berikut ini adalah beberapa hasil kustomisasi layer dari map,</p>
-                        <img src="img/map2.png" alt="Custom Map Topo" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
-                        <img src="img/map4.png" alt="Custom Map Satellite" style=" width:100%;margin: 40px auto ;display: block;">
-                        <img src="img/map5.png" alt=" Custom Map Carto Dark" style=" width:100%;margin: 0px auto 50px auto;display: block;">
+                        <img src="img/map2.png" alt="Custom Map Topo" style=" width:100%;">
+                        <div class="link">
+                            <a href="https://opentopomap.org/" target="_blank">OpenTopoMap</a>
+                        </div>
+                        <img src="img/map4.png" alt="Custom Map Satellite" style=" width:100%;">
+                        <div class="link">
+                            <a href="https://opentopomap.org/" target="_blank">CartoDark</a>
+                        </div>
+                        <img src="img/map5.png" alt=" Custom Map Carto Dark" style=" width:100%;">
+                        <div class="link">
+                            <a href="https://opentopomap.org/" target="_blank">Satellite</a>
+                        </div>
                     </li>
                     <li>Hasil Pengembangan 3D Visual
                         <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan 3D Visual dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json,</p>
@@ -236,7 +259,9 @@
                         <p>Hasil pengembangan 3D Visual pada program XPlane dan membandingkan map XPlane dengan map Virtual Radar Server yang diakses pada web browser,</p>
                         <img src="img/Hasil1.jpeg" alt="Hasil 3D Visual" style=" width: 100%;margin-left:auto;margin-right:auto;display: block;">
                         <img src="img/Hasil2.jpeg" alt="Hasil 3D Visual" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
-                        <a href="https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I" target="_blank">Cuplikan vidio percobaan pengembangan 3D Visual</a>
+                        <div class="link">
+                            <a href="https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I" target="_blank">Cuplikan vidio percobaan pengembangan 3D Visual</a>
+                        </div>
                     </li>
                     <li>Hasil Pengembangan Plane Notification Alert
                         <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Plane Notification Alert dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json, Tampilan utama dari Plugin Plane Alerter saat pertama kali dijalankan, belum terdapat kondisi yang terbaca oleh program,</p>
@@ -251,7 +276,9 @@
                         <img src="img/Email.jpeg" alt="EmailPenerima" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
                         <p>Berikut adalah isi dari pesan email penerima yang dikirimkan oleh Plugin PlaneAlerter, berisi data informasi dari pesawat PK-GTD, sesuai dengan perintah kondisi yang diberikan,</p>
                         <img src="img/IsiEmail.jpeg" alt="IsiEmailPlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
-                        <a href="https://youtu.be/N8AVjI3eY7o?si=404GwJRUCRZDvhJb" target="_blank">Cuplikan vidio percobaan pengembangan PlaneAlerter</a>
+                        <div class="link">
+                            <a href="https://youtu.be/N8AVjI3eY7o?si=404GwJRUCRZDvhJb" target="_blank">Cuplikan vidio percobaan pengembangan PlaneAlerter</a>
+                        </div>
                     </li>
                     <li>Hasil Pengembangan Portable ADS-B Receiver</li>
                     <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Portable ADS-B Receiver. Receiver dirancang dengan gabungan beberapa perangkat,</p>

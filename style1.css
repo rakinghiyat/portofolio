@@ -130,7 +130,7 @@ table {
     margin: 20px 0px 30px 0px;
 }
 
-.bold-title {
+.container .main .bold-title {
     font: 18px/28px 'Segoe UI', Tahoma;
     font-weight: 700;
     color: #222;
@@ -155,6 +155,15 @@ table {
     font-weight: 700;
     list-style: decimal;
     margin: 20px 0px 0px 20px;
+    /* padding-bottom: 50px; */
+}
+
+.container .main .list-image img {
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    margin-top: 20px;
 }
 
 .main .bold-subtitle {
@@ -184,7 +193,6 @@ table {
     font: 15px/0px 'Segoe UI', Tahoma;
     color: #069;
     padding: 2px;
-    margin-top: 0px;
 }
 
 .container .main a:hover {
@@ -192,10 +200,15 @@ table {
     background-color: #069;
 }
 
+.container .main .link {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
 .container img {
     width: 650px;
     height: auto;
-    margin: 10px 0px;
+    margin: 0px 0px;
 }
 
 /* .container .smallimg {
