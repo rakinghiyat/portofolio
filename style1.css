@@ -66,7 +66,23 @@ table {
     margin-bottom: 30px;
 }
 
-.container .header .StyleCode {
+.date::before {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 999px;
+    background-color: #00A6ED;
+    content: "Code";
+    box-sizing: border-box;
+    font: 18px/15px 'Segoe UI', Tahoma;
+    color: white;
+    font-weight: 700;
+    padding: 7px;
+    margin-right: 10px;
+    
+}
+
+/* .container .header .StyleCode {
     width: 60px;
     height: 30px;
     border-radius: 999px;
@@ -78,13 +94,13 @@ table {
     color: white;
     font-weight: 700;
 
-}
+} */
 
 .container .header .date {
     display: inline-block;
     position: absolute;
-    left: 70px;
-    top: 90px;
+    left: 0px;
+    top: 85px;
     font: 18px/10px 'Segoe UI', Tahoma;
     font-weight: 400;
     color: #6b6a6a;
@@ -94,7 +110,7 @@ table {
     font: 45px/50px 'Segoe UI', Tahoma;
     font-weight: bold;
     color: #222;
-    margin: 25px 0;
+    margin: 80px 0 25px;
 }
 
 .container .main .cover {
