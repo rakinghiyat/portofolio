@@ -44,26 +44,33 @@ table {
 }
 
 /* STYLE */
+
+body { 
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 18px;
+    line-height: 29px;
+    color: #3f3f3f;
+    font-weight: 400;
+}
+
 .container {
     width: 650px;
-    /* height: 5000px; */
     margin: auto;
     background-color: white;
     box-sizing: border-box;
     position: relative;
-    /* border: 1px solid black; */
 }
 
+/*------ Header ------*/
 
-.container .header .profile {
-    width: 50px;
-    height: 50px;
+.profile {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-image: url(img/profile.png);
     background-size: cover;
     background-position: 0 -2px ;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .date::before {
@@ -74,149 +81,124 @@ table {
     background-color: #00A6ED;
     content: "Code";
     box-sizing: border-box;
-    font: 18px/15px 'Segoe UI', Tahoma;
     color: white;
     font-weight: 700;
-    padding: 7px;
-    margin-right: 10px;
-    
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;    
 }
 
-/* .container .header .StyleCode {
-    width: 60px;
-    height: 30px;
-    border-radius: 999px;
-    background-color: #00A6ED;
-    text-align: center;
-    padding: 7px 0px;
-    box-sizing: border-box;
-    font: 18px/15px 'Segoe UI', Tahoma;
-    color: white;
-    font-weight: 700;
-
-} */
-
-.container .header .date {
-    display: inline-block;
-    position: absolute;
-    left: 0px;
-    top: 85px;
-    font: 18px/10px 'Segoe UI', Tahoma;
-    font-weight: 400;
+.date {
     color: #6b6a6a;
 }
 
-.container .header .judul {
-    font: 45px/50px 'Segoe UI', Tahoma;
+.judul {
+    font-size: 45px;
+    line-height: 50px;
     font-weight: bold;
+    margin: 20px 0px;
+    text-align:justify;
     color: #222;
-    margin: 80px 0 25px;
 }
 
-.container .main .cover {
+/*------ Content ------*/
+
+.cover {
     width: 100%;
     background-repeat: no-repeat;
-    margin: 50px 0px;
-}
-
-.container .main .description p{
-    font: 24px/33px 'Segoe UI', Tahoma;
-    color: #222;
+    background-size: cover;
     margin: 30px 0px;
 }
 
-.container .main h2 {
-    font: 30px/35px 'Segoe UI', Tahoma;
-    font-weight: 700;
+.container .content .description p {
+    font-size: 20px;
+    line-height: 33px;
+    margin: 25px 0px;
     color: #222;
+}
+
+.container .content h2 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
     margin-top: 50px;
-}
-
-.container .main h3 {
-    font: 18px/28px 'Segoe UI', Tahoma;
-    font-weight: 600;
     color: #222;
-    margin-bottom: 20px;
 }
 
-.container .main p {
-    font: 18px/29px 'Segoe UI', Tahoma;
-    color: #3f3f3f;
+.bold {
+    font-weight: 630;
+    color: #222;
+    margin: 20px 0;
+}
+
+p {
+    margin: 30px 0px;
+}
+
+.list {
+    list-style: disc;
+    margin: 20px 0 20px 20px;
+    color: #222;
+}
+
+
+.order-list .list {
     font-weight: 400;
-    margin: 20px 0px 30px 0px;
 }
 
-.container .main .bold-title {
-    font: 18px/28px 'Segoe UI', Tahoma;
-    font-weight: 700;
+.sub-list {
+    list-style: circle;
+    margin: 20px 0 20px 20px;
     color: #222;
-    /* padding: 30px 0px; */
 }
 
-.container .main ul {
-    font: 18px/28px 'Segoe UI', Tahoma;
+.sub-list .bold {
     color: #3f3f3f;
-    list-style:disc;
-    margin: 30px 0 20px 20px;
-    font-weight: 400;
-}   
-
-.container .main ul li p {
-    margin: 5px 0;
 }
 
-.container .main ol {
-    font: 18px/28px 'Segoe UI', Tahoma;
+.order-list {
     color: #222;
-    font-weight: 700;
+    font-weight: 630;
     list-style: decimal;
     margin: 20px 0px 0px 20px;
-    /* padding-bottom: 50px; */
 }
 
-.container .main .list-image img {
-    width: 70%;
-    margin-left:auto;
-    margin-right:auto;
+.order-list .list-image {
+    width: 90%;
+    margin: 20px auto 30px auto;
     display: block;
-    margin-top: 20px;
 }
 
-.main .bold-subtitle {
-    font: 18px/28px 'Segoe UI', Tahoma;
+/* .content .bold-subtitle {
     color: #222;
     font-weight: 500;   
-}
+} */
 
-.main ol li ul li {
+/* .content ol li ul li {
     margin: 5px 0;
     font: 18px/28px 'Segoe UI', Tahoma;
     color: #3f3f3f;
     font-weight: 400;
     margin: 10px 0px;
-}
-
-.main ul .sublist {
-    list-style: circle;
-}
-
-.main ul .bold-subsubtitle {
+} */
+/* 
+.content ul .bold-subsubtitle {
     color: #222;
     font-weight: 500;   
-}
+} */
 
-.container .main a {
+.container .content a {
     font: 15px/0px 'Segoe UI', Tahoma;
     color: #069;
     padding: 2px;
 }
 
-.container .main a:hover {
+.container .content a:hover {
     color: white;
     background-color: #069;
 }
 
-.container .main .link {
+.container .content .link {
     margin-top: 0px;
     margin-bottom: 30px;
 }
