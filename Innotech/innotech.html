@@ -113,7 +113,7 @@
                                 <ul class="sublist">
                                     <li class="sub-list"><span class="bold">Mode-S Beast GPS Jetvision :</span> Mengubah sinyal dari antena menjadi data mentah (raw).</li>
                                     <li class="sub-list"><span class="bold">Raspberry Pi 3 Model B+ :</span> Menjalankan program dan menghubungkan receiver ke jaringan internal PTDI.</li>
-                                    <li class="sub-list"><span class="bold">Virtual Radar Server (VRS) :</span> Mengolah data raw menjadi visualisasi peta dunia beserta informasi posisi pesawat berbasis web. <a href="https://www.virtualradarserver.co.uk/">(virtualradarserver.co.uk)</a></li>
+                                    <li class="sub-list"><span class="bold">Virtual Radar Server (VRS) :</span> Mengolah data raw menjadi visualisasi peta dunia beserta informasi posisi pesawat berbasis web. <a href="https://www.virtualradarserver.co.uk/">virtualradarserver.co.uk</a></li>
                                 </ul>
                             </li>
                             <li class="list"><span class="bold">Network :</span>
@@ -127,19 +127,19 @@
                             <li class="list"><span class="bold">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat menjadi visualisasi peta dunia berbasis web. Data pesawat tersedia dalam format JSON yang bisa dimanfaatkan untuk kebutuhan 3D Visual.</li>
                             <li class="list"><span class="bold">JSON :</span>
-                                Format data terstruktur yang dapat diakses dari VRS melalui link:
+                                Format data terstruktur yang dapat diakses dari VRS melalui alamat lokal:
                                 http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
                             <li class="list"><span class="bold">Program Python :</span>
                                 Terdiri dari dua program:
                                 <ul class="sublist">
-                                    <li class="sub-list"><span class="bold">Get Data JSON :</span> Mengambil data dari VRS dan menyimpannya dalam format CSV.</li>
-                                    <li class="sub-list"><span class="bold">Parsing to X-Plane :</span> Mengubah data CSV agar bisa ditampilkan sebagai pesawat di simulator X-Plane melalui plugin LiveTraffic.</li>
+                                    <li class="sub-list"><span class="bold">Get Data JSON :</span> Mengambil data dari VRS dan menyimpannya dalam format CSV. <a href="https://github.com/rakinghiyat/3D_Visual_ADS-B/blob/main/GetJSON.py" target="_blank">GetJSON.py</a></li>
+                                    <li class="sub-list"><span class="bold">Parsing to X-Plane :</span> Mengirimkan data CSV ke plugin LiveTraffic agar bisa ditampilkan pada simulator X-Plane. <a href="https://github.com/rakinghiyat/3D_Visual_ADS-B/blob/main/SendTraffic.py" target="_blank">SendTraffic.py</a></li>
                                 </ul>
                             </li>
                             <li  class="list"><span class="bold">Data CSV :</span>
-                                Format data sederhana berisi informasi penerbangan yang dipisahkan oleh koma, digunakan sebagai perantara antara VRS dan X-Plane.</li>
+                                Format data sederhana berisi informasi penerbangan yang dipisahkan oleh koma, digunakan sebagai perantara antara VRS dan X-Plane. <a href="https://github.com/rakinghiyat/3D_Visual_ADS-B/blob/main/DataCSV.csv" target="_blank">Data CSV</a></li>
                             <li  class="list"><span class="bold">Plugin LiveTraffic :</span>
-                                Plugin di X-Plane yang menampilkan lalu lintas penerbangan real-time menggunakan data tracking publik.</li>
+                                Plugin di X-Plane yang menampilkan lalu lintas penerbangan real-time menggunakan data tracking publik. <a href="https://forums.x-plane.org/index.php?/files/file/49749-livetraffic/">LiveTraffic</a></li>
                             <li  class="list"><span class="bold">X-Plane :</span>
                                 Software flight simulator dari Laminar Research yang digunakan untuk visualisasi 3D, mendukung Windows, macOS, dan Linux (versi terbaru: X-Plane 12).</li>
                         </ul>
@@ -151,7 +151,7 @@
                                 Mengolah data ADS-B dari pesawat dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON di:
                                 http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
                             <li class="list"><span class="bold">Plugin PlaneAlerter :</span>
-                                Plugin yang mengirimkan notifikasi otomatis jika pesawat terdeteksi sesuai kriteria tertentu (registrasi, ketinggian, kecepatan, dll.).</li>
+                                Plugin yang mengirimkan notifikasi otomatis jika pesawat terdeteksi sesuai kriteria tertentu (registrasi, ketinggian, kecepatan, dll.) <a href="https://github.com/Dom2364/PlaneAlerter">PlaneAlerter</a>.</li>
                             <li class="list"><span class="bold">Internet & Email :</span>
                                 Internet PTDI digunakan agar notifikasi bisa dikirim ke email, yang bisa disesuaikan penerimanya (lebih dari satu email).</li>
                             <li class="list"><span class="bold">WhatsApp Business API :</span>
@@ -239,7 +239,7 @@
                         <img src="img/Hasil1.jpeg" alt="Hasil 3D Visual" style=" width: 100%;margin-left:auto;margin-right:auto;display: block;">
                         <img src="img/Hasil2.jpeg" alt="Hasil 3D Visual" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
                         <div class="link">
-                            <a href="https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I" target="_blank">Cuplikan vidio percobaan pengembangan 3D Visual</a>
+                            <a href="https://youtu.be/T_v9vhEG0G0?si=kk2WHuJGAHGIxJ2I" target="_blank">Cuplikan percobaan pengembangan 3D Visual</a>
                         </div>
                     </li>
                     <li>Hasil Pengembangan Plane Notification Alert
@@ -256,7 +256,7 @@
                         <p>Berikut adalah isi dari pesan email penerima yang dikirimkan oleh Plugin PlaneAlerter, berisi data informasi dari pesawat PK-GTD, sesuai dengan perintah kondisi yang diberikan,</p>
                         <img src="img/IsiEmail.jpeg" alt="IsiEmailPlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
                         <div class="link">
-                            <a href="https://youtu.be/N8AVjI3eY7o?si=404GwJRUCRZDvhJb" target="_blank">Cuplikan vidio percobaan pengembangan PlaneAlerter</a>
+                            <a href="https://youtu.be/N8AVjI3eY7o?si=404GwJRUCRZDvhJb" target="_blank">Cuplikan percobaan pengembangan PlaneAlerter</a>
                         </div>
                     </li>
                     <li>Hasil Pengembangan Portable ADS-B Receiver</li>

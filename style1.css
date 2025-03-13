@@ -170,13 +170,13 @@ p {
     display: block;
 }
 
-.container .content a {
+.content a {
     font: 15px/0px 'Segoe UI', Tahoma;
     color: #069;
     padding: 2px;
 }
 
-.container .content a:hover {
+.content a:hover {
     color: white;
     background-color: #069;
 }
