@@ -39,11 +39,12 @@
 
                 <h2>My Teams</h2>
 
-                <p>Saya membentuk Tim yang terdiri dari 3 orang dan Saya sebagai ketua kelompok dengan Pitch Number 62, Tim kami membawakan judul ide inovasi yang muncul berdasarkan permasalahan yang terjadi dilapangan, yaitu <span class="bold">"PENERAPAN & PENGEMBANGAN ADS-B RECEIVER"</span> Berikut adalah foto kami,</p>
+                <p>Saya membentuk Tim yang terdiri dari 3 orang dan Saya sebagai ketua kelompok dengan Pitch Number 62, Tim kami membawakan judul ide inovasi yang muncul berdasarkan permasalahan yang terjadi dilapangan, yaitu <span class="bold">"PENERAPAN & PENGEMBANGAN ADS-B RECEIVER"</span></p>
             
-
-                <img src="img/photo1.jpeg" alt="photo">
-
+                
+                <img src="img/from-this.jpeg" alt="from-this">
+                <img src="img/to-this.jpeg" alt="to-this" style="margin: 30px 0; display: block;">
+                <img src="img/sertifikat.jpeg" alt="sertifikat" style="border: 1px solid #7dc0dd;">
 
                 <h2>Introduction Inovation</h2>
                 <p>Kegiatan Flight Test merupakan tahap akhir dalam proses produksi dan maintenance pesawat maupun helikopter, di mana data penerbangan biasanya didukung oleh sistem FTIS. Pada November-Desember 2022, Flight Test Center (FTC) terlibat dalam Video Downlink (VDL) Development Flight Test untuk pesawat CN235-200 (AX-2349). Selama pelaksanaan, terjadi kendala berupa hilangnya sinyal dari pesawat ke Receiver Ground VDL, sehingga data dan video tidak dapat diterima secara optimal.
@@ -121,10 +122,7 @@
                         </ul>
                         </li>
                         <li>3D Visual Plane
-                            <div class="list-image">
-                                <img src="img/3D.png" alt="3D Visual Plane" class="list-image">
-                            </div>
-                            
+                        <img src="img/3D.png" alt="3D Visual Plane" class="list-image">
                         <ul>
                             <li class="list"><span class="bold">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat menjadi visualisasi peta dunia berbasis web. Data pesawat tersedia dalam format JSON yang bisa dimanfaatkan untuk kebutuhan 3D Visual.</li>
@@ -146,64 +144,54 @@
                                 Software flight simulator dari Laminar Research yang digunakan untuk visualisasi 3D, mendukung Windows, macOS, dan Linux (versi terbaru: X-Plane 12).</li>
                         </ul>
                         </li>
-                        <li>
-                            <span class="bold">Plane Notification Alert</span>
-                            <div class="list-image">
-                                <img src="img/Notif.png" alt="Notif Image">
-                            </div>
-                            
+                        <li>Plane Notification Alert
+                        <img src="img/Notif.png" alt="Notif Image" class="list-image">
                         <ul>
-                            <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                            <li class="list"><span class="bold">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON di:
                                 http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
-                            <li><span class="bold-subtitle">Plugin PlaneAlerter :</span>
+                            <li class="list"><span class="bold">Plugin PlaneAlerter :</span>
                                 Plugin yang mengirimkan notifikasi otomatis jika pesawat terdeteksi sesuai kriteria tertentu (registrasi, ketinggian, kecepatan, dll.).</li>
-                            <li><span class="bold-subtitle">Internet & Email :</span>
+                            <li class="list"><span class="bold">Internet & Email :</span>
                                 Internet PTDI digunakan agar notifikasi bisa dikirim ke email, yang bisa disesuaikan penerimanya (lebih dari satu email).</li>
-                            <li><span class="bold-subtitle">WhatsApp Business API :</span>
+                            <li class="list"><span class="bold">WhatsApp Business API :</span>
                                 Dapat digunakan sebagai opsi tambahan untuk mengirim notifikasi ke WhatsApp karyawan atau pihak terkait secara otomatis.</li>
-                            <li><span class="bold-subtitle">WhatsApp :</span>
+                            <li class="list"><span class="bold">WhatsApp :</span>
                                 Aplikasi pesan lintas platform yang memungkinkan penerimaan notifikasi secara langsung melalui teks atau media lainnya.
                                 </li>
                         </ul>
                         </li>
-                        <li>
-                            <span class="bold">Automatic Rotor Antenna</span>
-                            <div class="list-image">
-                                <img src="img/Rotor.png" alt="Automatic Rotor Antenna">
-                            </div>
+                        <li>Automatic Rotor Antenna
+                            <img src="img/Rotor.png" alt="Automatic Rotor Antenna" class="list-image">
                             <ul>
-                                <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                                <li class="list"><span class="bold">Virtual Radar Server (VRS) :</span>
                                     Mengolah data ADS-B dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON.</li>
-                                <li><span class="bold-subtitle">Program Auto Track :</span>
+                                <li class="list"><span class="bold">Program Auto Track :</span>
                                     Program desktop (dengan GUI) yang menghitung sudut bearing antara antena dan pesawat, menggunakan input manual atau otomatis dari data JSON. Perintah sudut bearing dikirim ke Arduino.</li>
-                                <li><span class="bold-subtitle">Arduino :</span>
+                                <li class="list"><span class="bold">Arduino :</span>
                                     Mengubah perintah dari Auto Track menjadi sinyal untuk mengontrol motor stepper.</li>
-                                <li><span class="bold-subtitle">Driver Controller :</span>
+                                <li class="list"><span class="bold">Driver Controller :</span>
                                     Menerima sinyal dari Arduino, mengatur tegangan dan arus ke motor stepper.</li>
-                                <li><span class="bold-subtitle">Motor Stepper :</span>
+                                <li class="list"><span class="bold">Motor Stepper :</span>
                                     Menggerakkan antena telemetry berdasarkan perintah yang diterima.</li>
-                                <li><span class="bold-subtitle">Antenna Telemetry :</span>
+                                <li class="list"><span class="bold">Antenna Telemetry :</span>
                                     Berputar sesuai perintah untuk melacak posisi pesawat secara otomatis.</li>
                             </ul>
                         </li>
-                        <li>
-                            <span class="bold">ADS-B Receiver Portable</span>
-                            <div class="list-image">
-                                <img src="img/Portable.png" alt="ADS-B Receiver Portable">
-                            </div>
+                        <li>ADS-B Receiver Portable
+                        <img src="img/Portable.png" alt="ADS-B Receiver Portable" class="list-image">
                             <ul>
-                                <li><span class="bold-subtitle">Antenna :</span>
+                                <li class="list"><span class="bold">Antenna :</span>
                                     Menerima sinyal pesawat di frekuensi UHF (1090 MHz) dengan jenis omnidirectional.</li>
-                                <li><span class="bold-subtitle">RTL-SDR :</span>
+                                <li class="list"><span class="bold">RTL-SDR :</span>
                                     Receiver berbasis Software Defined Radio (SDR) yang mengubah sinyal RF menjadi data digital.</li>
-                                <li><span class="bold-subtitle">Raspberry Pi :</span>
+                                <li class="list"><span class="bold">Raspberry Pi :</span>
                                     Menjalankan program pengolahan data dan visualisasi menggunakan Virtual Radar Server.</li>
-                                <li><span class="bold-subtitle">Power Bank :</span>
+                                <li class="list"><span class="bold">Power Bank :</span>
                                     Menyediakan daya 5VDC untuk semua perangkat.</li>
-                                <li><span class="bold-subtitle">Virtual Radar Server (VRS) :</span>
+                                <li class="list"><span class="bold">Virtual Radar Server (VRS) :</span>
                                     Mengolah data pesawat dan menampilkan peta serta informasi pesawat dalam bentuk web base.</li>
-                                <li><span class="bold-subtitle">Display Touch Screen 7” :</span>
+                                <li class="list"><span class="bold">Display Touch Screen 7” :</span>
                                     Menampilkan data dan peta langsung di layar serta memudahkan pengguna memberi input langsung ke Raspberry Pi.</li>
                             </ul>
                         </li>
@@ -211,7 +199,7 @@
                 </div>
 
                 <h2>Implementation Result</h2>
-                <ol>
+                <ol class="order-list">
                     <li>Hasil Penerapan ADS-B Receiver
                         <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil penerapan ADS-B Receiver di Menara FTC yang sudah diimplementasikan. Hasil implementasi Antenna Receiver,</p>
                         <img src="img/Antenna.jpg" alt="Antenna Receiver" style="width:30%; margin-left:10px">
@@ -273,7 +261,6 @@
                     </li>
                     <li>Hasil Pengembangan Portable ADS-B Receiver</li>
                     <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Portable ADS-B Receiver. Receiver dirancang dengan gabungan beberapa perangkat,</p>
-                    <!-- <img src="img/Antenna.jpg" alt="Antenna Receiver" style="width:30%; margin-left:10px"> <img src="img/Receiver.png" alt="Receiver ADSB" style="width: 63.5%; position: absolute; "> -->
                     <img src="img/PortableADS-B.png" alt="PortableADS-B" style=" width: 80%; margin: 40px auto 0px auto; display: block;">
                     <p>Kegiatan uji coba dari dari hasil pengembangan Portable ADS-B Receiver, untuk menguji penerimaan data,</p>
                     <img src="img/UjiCobaPortable.jpeg" alt="UjiCobaPortable-ADSB" style=" width: 70%; margin: 40px auto 0px auto; display: block;">
@@ -285,10 +272,10 @@
                 <p>ICAO mewajibkan semua pesawat sipil angkut menggunakan teknologi ADS-B sebagai pengganti radar konvensional, dengan Mode S 1090 MHz sebagai standar global.</p>
 
                 <ul>
-                    <li><span class="bold">Automatic</span> - Informasi ditransmisikan otomatis tanpa campur tangan pilot.</li>
-                    <li><span class="bold">Dependent</span> - Data posisi dan kecepatan berasal dari GPS atau sistem navigasi pesawat.</li>
-                    <li><span class="bold">Surveillance</span> - Menyediakan data posisi, kecepatan, identitas, dll.</li>
-                    <li><span class="bold">Broadcast</span> - Data dipancarkan terus-menerus tanpa perlu interogasi eksternal.</li>
+                    <li class="list"><span class="bold">Automatic</span> - Informasi ditransmisikan otomatis tanpa campur tangan pilot.</li>
+                    <li class="list"><span class="bold">Dependent</span> - Data posisi dan kecepatan berasal dari GPS atau sistem navigasi pesawat.</li>
+                    <li class="list"><span class="bold">Surveillance</span> - Menyediakan data posisi, kecepatan, identitas, dll.</li>
+                    <li class="list"><span class="bold">Broadcast</span> - Data dipancarkan terus-menerus tanpa perlu interogasi eksternal.</li>
                 </ul>
 
                 <img src="img/ProsesADS-B.png" alt="ProsesADS-B" style="width:70%;margin-left:auto;margin-right:auto;display: block;">
@@ -299,28 +286,28 @@
                 
                 <h2>Closing thoughts</h2>
                 
-                <p>Inovasi Penerapan dan Pengembangan ADS-B di PT Dirgantara Indonesia mendukung kegiatan Flight Test melalui beberapa poin utama:</p>
-
-                <ol>
-                    <li><span class="bold">Mengurangi Ketergantungan pada FlightRadar24</span><p>Menggunakan Receiver ADS-B sendiri untuk pemantauan real-time, mengatasi keterlambatan dan keterbatasan data.</p></li>
-                    <li><span class="bold">Visualisasi 3D dan Data Real-time</span><p>Menampilkan visualisasi 3D dan data penerbangan real-time di MOCR, meningkatkan analisis dan pengambilan keputusan.</p></li>
-                    <li><span class="bold">Aplikasi Notifikasi Pesawat</span><p>Mengembangkan aplikasi notifikasi kondisi pesawat uji agar pihak terkait dapat merespons lebih cepat.</p></li>
-                    <li><span class="bold">Automatic Rotor Antenna</span><p>Mendukung sistem FTIS Telemetry, meningkatkan kualitas pengumpulan data selama uji terbang.</p></li>
-                    <li><span class="bold">Receiver ADS-B Portable</span><p>Memungkinkan pemantauan di berbagai lokasi, meningkatkan fleksibilitas dan mobilitas saat Flight Test.</p></li>
-                </ol>
-
-                <h3 class="bold">Keunggulan Inovasi</h3>
+                <p>Inovasi Penerapan dan Pengembangan ADS-B di PT Dirgantara Indonesia mendukung kegiatan Flight Test melalui beberapa poin utama :</p>
 
                 <ul>
-                    <li>Meningkatkan efisiensi operasional dan menghemat waktu serta sumber daya.
+                    <li class="list"><span class="bold">Mengurangi Ketergantungan pada FlightRadar24</span><br>Menggunakan Receiver ADS-B sendiri untuk pemantauan real-time, mengatasi keterlambatan dan keterbatasan data.</li>
+                    <li class="list"><span class="bold">Visualisasi 3D dan Data Real-time</span><br>Menampilkan visualisasi 3D dan data penerbangan real-time di MOCR, meningkatkan analisis dan pengambilan keputusan.</li>
+                    <li class="list"><span class="bold">Aplikasi Notifikasi Pesawat</span><br>Mengembangkan aplikasi notifikasi kondisi pesawat uji agar pihak terkait dapat merespons lebih cepat.</li>
+                    <li class="list"><span class="bold">Automatic Rotor Antenna</span><br>Mendukung sistem FTIS Telemetry, meningkatkan kualitas pengumpulan data selama uji terbang.</li>
+                    <li class="list"><span class="bold">Receiver ADS-B Portable</span><br>Memungkinkan pemantauan di berbagai lokasi, meningkatkan fleksibilitas dan mobilitas saat Flight Test.</li>
+                </ul>
+
+                <h3 class="bold">Keunggulan Inovasi :</h3>
+
+                <ul>
+                    <li class="list">Meningkatkan efisiensi operasional dan menghemat waktu serta sumber daya.
                     </li>
-                    <li>Menyediakan data lengkap untuk analisis mendalam.
+                    <li class="list">Menyediakan data lengkap untuk analisis mendalam.
                     </li>
-                    <li>Mendukung respons cepat melalui aplikasi notifikasi.
+                    <li class="list">Mendukung respons cepat melalui aplikasi notifikasi.
                     </li>
-                    <li>Menawarkan fleksibilitas tinggi dengan Receiver ADS-B portable.
+                    <li class="list">Menawarkan fleksibilitas tinggi dengan Receiver ADS-B portable.
                     </li>
-                    <li>Menjadikan PTDI sebagai perusahaan yang mengadopsi teknologi terkini.
+                    <li class="list">Menjadikan PTDI sebagai perusahaan yang mengadopsi teknologi terkini.
                     </li>
                 </ul>
                 <p>Inovasi ini diharapkan menjadi fondasi penting untuk meningkatkan kualitas, efisiensi, dan daya saing PTDI di masa depan, sekaligus memperkuat posisinya di industri penerbangan global.

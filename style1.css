@@ -45,7 +45,7 @@ table {
 
 /* STYLE */
 
-body { 
+body, p { 
     font-family: 'Segoe UI', Tahoma;
     font-size: 18px;
     line-height: 29px;
@@ -121,7 +121,7 @@ body {
     font-size: 30px;
     line-height: 35px;
     font-weight: 700;
-    margin-top: 50px;
+    margin: 50px 0 30px 0;
     color: #222;
 }
 
@@ -132,17 +132,18 @@ body {
 }
 
 p {
-    margin: 30px 0px;
+    margin: 25px 0px;
 }
 
 .list {
     list-style: disc;
     margin: 20px 0 20px 20px;
-    color: #222;
+    color: #3f3f3f;
+    font-weight: 400;
 }
 
 
-.order-list .list {
+.order-list li p {
     font-weight: 400;
 }
 
@@ -169,24 +170,6 @@ p {
     display: block;
 }
 
-/* .content .bold-subtitle {
-    color: #222;
-    font-weight: 500;   
-} */
-
-/* .content ol li ul li {
-    margin: 5px 0;
-    font: 18px/28px 'Segoe UI', Tahoma;
-    color: #3f3f3f;
-    font-weight: 400;
-    margin: 10px 0px;
-} */
-/* 
-.content ul .bold-subsubtitle {
-    color: #222;
-    font-weight: 500;   
-} */
-
 .container .content a {
     font: 15px/0px 'Segoe UI', Tahoma;
     color: #069;
@@ -209,13 +192,7 @@ p {
     margin: 0px 0px;
 }
 
-/* .container .smallimg {
-    width: 300px;
-    display: block;
-    margin: 40px auto;
-} */
-
-.container .back {
+.back {
     width: 650px;
     font: 20px/10px 'Segoe UI', Tahoma;
     font-weight: 700;
@@ -225,18 +202,18 @@ p {
     color: #969696;
 }
 
-.container .back a {
+.back a {
     text-decoration: none;
     color: #069;
     padding: 2px;
 }
 
-.container .back a:hover {
+.back a:hover {
     color: white;
     background-color: #069;
 }
 
-.container .footer {
+.footer {
     width: 650px;
     font: 15px/10px 'Segoe UI', Tahoma;
     padding: 30px 0;
@@ -245,15 +222,19 @@ p {
     color: #969696;
 }
 
-.container .footer a {
+.footer a {
     text-decoration: none;
     color: #069;
     padding: 2px;
 }
 
-.container .footer a:hover {
+.footer a:hover {
     color: white;
     background-color: #069;
+}
+
+.spacing {
+    margin-top: 30px;
 }
 
 /* RESET FLOATS */
