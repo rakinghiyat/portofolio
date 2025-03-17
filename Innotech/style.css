@@ -202,9 +202,7 @@ p {
 
 .back {
     width: 640px;
-    font: 20px/10px 'Segoe UI', Tahoma;
-    font-weight: 700;
-    padding: 30px 0;
+    padding: 23px 0;
     margin-top: 30px;
     border-top: 1px solid #c8c6c6;
     color: #969696;
@@ -214,6 +212,8 @@ p {
     text-decoration: none;
     color: #069;
     padding: 2px;
+    font-weight: 650;
+    font-size: 17px;
 }
 
 .back a:hover {
@@ -223,9 +223,8 @@ p {
 
 .footer {
     width: 640px;
-    font: 15px/10px 'Segoe UI', Tahoma;
+    font-size: 15px;
     padding: 30px 0;
-    margin-top: 8px;
     border-top: 1px solid #c8c6c6;
     color: #969696;
 }
@@ -255,6 +254,7 @@ p {
         max-width: 100%;}
     .container .footer {
         max-width: 100%;
+        font-size: 14px;
         line-height: 20px;}
     body, p {
         font-size: 17px;}
@@ -279,6 +279,7 @@ p {
         max-width: 100%;}
     .container .footer {
         max-width: 100%;
+        font-size: 13px;
         line-height: 20px;}
     body, p {
         font-size: 15px;}
