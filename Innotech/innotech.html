@@ -6,17 +6,6 @@
     <title>Innotech Awards 2023
     </title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .container .content .cover {
-        height: 930px;
-        background-image: url(img/BannerInnotech.jpeg);
-        border: 2px solid #7dc0dd;
-        }
-        /* .container .content .articel img {
-        image-orientation: flip;
-        
-        } */
-    </style>
 </head>
 <body>
     <div class="container">
@@ -27,7 +16,7 @@
             <div class="judul"><h1>1st Winner Innotech Awards 2023 Indonesian Aerospace</h1></div>
         </div>
         <div class="content">
-            <div class="cover"></div>
+            <div class="cover"><img src="img/BannerInnotech.jpeg" alt="BannerInnotech" style="border: 2px solid #7dc0dd"></div>
             <div class="description">
                 <p>Innotech Awards 2023 adalah kompetisi inovasi teknologi pertama yang diselenggarakan oleh Direktorat Niaga, Teknologi dan Pengembangan, PT Dirgantara Indonesia.</p>
                 <p>Kegiatan ini merupakan wadah bagi seluruh karyawan PT Dirgantara Indonesia untuk menuangkan segala bentuk ide dan inovasi demi kemajuan bisnis dan keberlanjutan perusahaan mengingat perkembangan dunia yang sangat cepat dan tidak dapat diprediksi.</p>
@@ -117,7 +106,7 @@
                                 </ul>
                             </li>
                             <li class="list"><span class="bold">Network :</span>
-                                Receiver terhubung ke jaringan lokal PTDI melalui Switch IT PTDI, memungkinkan data diakses dari komputer manapun di jaringan yang sama melalui alamat: http://10.180.110.25/VirtualRadar/desktop.html, menampilkan peta dunia dan informasi pesawat terdeteksi.
+                                Receiver terhubung ke jaringan lokal PTDI melalui Switch IT PTDI, memungkinkan data diakses dari komputer manapun di jaringan yang sama melalui alamat: http://[IP local]/VirtualRadar/desktop.html, menampilkan peta dunia dan informasi pesawat terdeteksi.
                             </li>
                         </ul>
                         </li>
@@ -128,7 +117,7 @@
                                 Mengolah data ADS-B dari pesawat menjadi visualisasi peta dunia berbasis web. Data pesawat tersedia dalam format JSON yang bisa dimanfaatkan untuk kebutuhan 3D Visual.</li>
                             <li class="list"><span class="bold">JSON :</span>
                                 Format data terstruktur yang dapat diakses dari VRS melalui alamat lokal:
-                                http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
+                                http://[IP local]/VirtualRadar/AircraftList.json.</li>
                             <li class="list"><span class="bold">Program Python :</span>
                                 Terdiri dari dua program:
                                 <ul class="sublist">
@@ -149,7 +138,7 @@
                         <ul>
                             <li class="list"><span class="bold">Virtual Radar Server (VRS) :</span>
                                 Mengolah data ADS-B dari pesawat dan menampilkan peta dunia berbasis web. Data pesawat tersedia dalam format JSON di:
-                                http://10.110.180.25/VirtualRadar/AircraftList.json.</li>
+                                http://[IP local]/VirtualRadar/AircraftList.json.</li>
                             <li class="list"><span class="bold">Plugin PlaneAlerter :</span>
                                 Plugin yang mengirimkan notifikasi otomatis jika pesawat terdeteksi sesuai kriteria tertentu (registrasi, ketinggian, kecepatan, dll.) <a href="https://github.com/Dom2364/PlaneAlerter">PlaneAlerter</a>.</li>
                             <li class="list"><span class="bold">Internet & Email :</span>
@@ -202,10 +191,8 @@
                 <ol class="order-list">
                     <li>Hasil Penerapan ADS-B Receiver
                         <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil penerapan ADS-B Receiver di Menara FTC yang sudah diimplementasikan. Hasil implementasi Antenna Receiver,</p>
-                        <img src="img/Antenna.jpg" alt="Antenna Receiver" style="width:30%; margin-left:10px">
-                        <img src="img/Receiver.png" alt="Receiver ADSB" style="width: 63.5%; position: absolute; ">
-
-                        <p>Tampilan map Receiver yang diakses pada web browser dengan alamat, http://10.110.180.25/VirtualRadar/</p>
+                        <img src="img/Antenna1.jpg" alt="Antenna&Receiver" style="width: 100%;">
+                        <p>Tampilan map Receiver yang diakses pada web browser dengan alamat, http://[IP local]/VirtualRadar/</p>
                         <img src="img/MAP1.png" alt="Map Web Browser" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Berikut tampilan histori jangkauan Receiver, dapat menerima altitude pesawat pada <9999 - >30000 feet dengan jarak terjauh ± 177 nautical miles</p>
                         <img src="img/Range.png" alt="Range Receive" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
@@ -225,7 +212,7 @@
                         </div>
                     </li>
                     <li>Hasil Pengembangan 3D Visual
-                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan 3D Visual dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json,</p>
+                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan 3D Visual dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://[IP local]/VirtualRadar/AircraftList.json,</p>
                         <img src="img/JSON.png" alt="Format JSON" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
                         <p>Berikut dokumentasi dari program GetJSON.py untuk mengambil data JSON, data disimpan dengan format CSV,</p>
                         <img src="img/GetJSON.jpeg" alt="GetJSON.py" style=" width:100%;margin-left:auto;margin-right:auto;display: block;">
@@ -243,7 +230,7 @@
                         </div>
                     </li>
                     <li>Hasil Pengembangan Plane Notification Alert
-                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Plane Notification Alert dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://10.110.180.25/VirtualRadar/AircraftList.json, Tampilan utama dari Plugin Plane Alerter saat pertama kali dijalankan, belum terdapat kondisi yang terbaca oleh program,</p>
+                        <p>Berdasarkan konsep dari rencana implementasi berikut dokumentasi hasil pengembangan Plane Notification Alert dengan memanfaatkan data dari Receiver ADS-B menara FTC, Data Virtual Radar Server dengan Format JSON yang diakses dengan alamat, http://[IP local]/VirtualRadar/AircraftList.json, Tampilan utama dari Plugin Plane Alerter saat pertama kali dijalankan, belum terdapat kondisi yang terbaca oleh program,</p>
                         <img src="img/PlaneAlerter.jpeg" alt="PlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
                         <p>Memberikan kondisi untuk Plugin Plane Alerter, dengan trigger registrasi pesawat PKGTD sebagai uji coba program,</p>
                         <img src="img/Condition.jpeg" alt="ConditionPlaneAlerter" style=" width: 100%; margin: 40px auto 0px auto; display: block;">
@@ -313,12 +300,10 @@
                 <p>Inovasi ini diharapkan menjadi fondasi penting untuk meningkatkan kualitas, efisiensi, dan daya saing PTDI di masa depan, sekaligus memperkuat posisinya di industri penerbangan global.
                 </p>
 
+            </div>        
+            <div class="back">
+                <a href="https://rakinghiyat.github.io/portofolio/">Read more notes</a>
             </div>
-        </div>
-
-
-        <div class="back">
-            <a href="https://rakinghiyat.github.io/portofolio/">Read more notes</a>
         </div>
         <div class="footer">
             Rakin lives and works in Bandung, Indonesia. He shares software on <a href="https://github.com/rakinghiyat" target="_blank">GitHub.</a>
