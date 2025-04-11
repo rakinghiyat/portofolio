@@ -26,7 +26,8 @@ You can find my contact info and social links on the website, or reach me throug
 
 ## 📄 License
 This project is open-source and available under the MIT License.
-
+<br>
 <hr>
-> 💡 **Made with curiosity, passion, and precision by [rakinghiyat](https://github.com/rakinghiyat)** 🚀
+
+💡 **Made with curiosity, passion, and precision by [rakinghiyat](https://github.com/rakinghiyat)** 🚀
 
