@@ -20,11 +20,11 @@ Feel free to explore, and reach out if you're interested in collaborating or jus
 - CSS3  
 - JavaScript  
 
-##📬 Contact
+## 📬 Contact
 You can find my contact info and social links on the website, or reach me through GitHub.
 
 
-##📄 License
+## 📄 License
 This project is open-source and available under the MIT License.
 
 Made with passion and purpose by rakinghiyat.
